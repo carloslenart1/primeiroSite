@@ -1,0 +1,97 @@
+body{
+    /*background-image: url(); imagem de fundo no site*/
+    background-color:#E7F5E3;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 7%;
+}
+
+
+
+#menu{
+    padding-left: 0%;
+    list-style-type: none;/*Remover marcador da lista*/
+    background-color:#E7F5E3;
+    width: 150px;
+    height: 100%;
+    position:fixed;
+    overflow: auto;/*ativa barra de rolarem se tiver muito conteúdo*/
+    padding-top: 1%;
+}
+
+li a{
+    display: block;
+    width: 120px;
+    height: 60px;
+    background-color: #E7F5E3; 
+    color: rgb(0, 0, 0);
+}
+
+
+
+.item{
+    /*alinhamento do item horizontalmente*/
+    text-align: center;
+    font-size: 14px;/*tamanho da letra*/
+    font-family: serif;/*tipo de letra*/
+}
+
+
+
+li a:hover{/*altera a cor do link ao passar o mouse*/
+    background: #C7E7BF;
+    color:black;
+}
+
+.item a{
+    padding-top: 30px;
+    text-decoration: none;
+}
+
+p,h1,h2,h3,h4, img,video,iframe,h5,ol,ul{
+    padding-left: 15%;
+}
+
+.a{
+    padding-left: 10%;
+}
+
+#button{
+    padding-left: 10%;
+}
+
+h1,h2,h3{
+    color:#4F208D;
+}
+
+table{
+    border-collapse: collapse;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+td,tr{
+    border: 2px solid #000000;
+}
+
+tr{
+    color:black;
+}
+
+.calculadora{
+    border: 2px solid #000000;
+    display:flex;
+    display: inline-block;
+    background-color: aliceblue;
+}
+
+#calc{
+    padding-left: 44%;
+}
+
+#luz{
+    padding-left: 46%;
+}

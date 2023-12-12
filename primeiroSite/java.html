@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos java script</title>
+    <link rel="stylesheet" href="geral.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <ul id="menu"><!--lista do menu-->
+        <li class="item"><!--item do menu-->
+            <a href="index.html">Home</a>
+         </li>
+        <li class="item">
+            <a href="links.html">SENAI</a>
+        </li>
+        <li class="item">
+            <a href="inputs.html">Formulários</a>
+        </li>
+        <li class="item">
+            <a href="listasTabelas.html">Tabelas e listas</a>
+        </li>
+        <li class="item">
+            <a href="linhasParagrafos.html">Linhas e Paragrafos</a>
+        </li>
+        <li class="item">
+            <a href="conexao.html">Conexão CSS</a>
+        </li>
+        
+        <li class="item">
+            <a href="java.html">Comandos java</a>
+        </li>
+        <li class="item"><!--item do menu-->
+            <a href="desenvolvedor.html">Desenvolvedor</a>
+        </li>
+    </ul>
+    
+    <h1>JavaScript no desenvolvimento WEB</h1>
+    <p>JavaScript permite criar interfaces de usuário interativas. Páginas web podem responder a ações do usuário, como cliques, movimentos do mouse, preenchimento de formulários, etc., sem a necessidade de recarregar a página.</p>
+    <h1>DOM - Document Object Model</h1>
+    <p>Criado automaticamente pelo navegador ao carregar a página,e assim podemos manipular os elementos criados no HTML. O JavaScript permite a manipulação dinâmica do DOM, que representa a estrutura hierárquica de elementos HTML na página. Isso possibilita adicionar, remover ou modificar elementos e atributos na página em tempo real.</p>
+    <h1>CONEXÃO</h1>
+    <p><table>
+        <tr align="center" bgcolor="E0FFFF">
+            <td >
+                Tipo de conexão
+            </td>
+            <td>
+                Definição
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Externa
+            </td>
+            <td>
+                É utilizado um comando &lt script &gt no head que será inserido um link para o JavaScript do site.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Interna
+            </td>
+            <td>
+                É utilizado um comando &lt script &gt no head ou no  body que será inserido a função desejada ali internamente mesmo, sem precisar de links de conexão.
+            </td>
+        </tr>
+    </table>
+</p>
+
+    <h1>Variaveis</h1>
+    <p>Variável é o nome utilizado para definir um ou mais valores que são manipulados pelos programas durante a sua operação. O nome “variável” é utilizado por ser um tipo de conteúdo que pode apresentar diferentes valores enquanto o sistema está em execução.</p>
+    <p>Exemplo de como criar uma variável em java:
+        <br>
+    var minhaVariavel = "Olá, mundo!";
+    E para realizar a impressão no console, utilizamo o comando console.log(minhaVariavel);
+    <br>
+    </p>
+    
+    <ul>
+        <li>
+            Todo comando deve terminar com ; ao final.
+        </li>
+        <li>
+            Não pode iniciar com letra maiuscula ou n°.
+        </li>
+        <li>
+            Não pode ter acentos ou caracter especial: # $ % @ & !.
+        </li>
+        <li>
+            Não pode ter espaço entre as palavras.
+        </li>
+
+    </ul>
+    
+    <h1>Tipos de dados </h1>
+    <p>Toda a variável armazena uma informação, essa informação tem uma tipologia ou formato.
+        <table>
+            <tr align="center" bgcolor="E0FFFF">
+                <td>
+                    TIPOLOGIA / FORMATO
+                </td>
+                <td>
+                    QUANDO USAR
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Float / double
+                </td>
+                <td>
+                    números decimais(com vírgula)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Int
+                </td>
+                <td>
+                    números inteiros(sem vírgula)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    String
+                </td>
+                <td>
+                    Palavras / Frases (Alfabeto alfanumericos)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Booliano
+                </td>
+                <td>
+                    True or False
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Char
+                </td>
+                <td>
+                    'M' 'F'
+                </td>
+            </tr>
+        </table>
+    </p>
+
+    <h1>Formatando Strings</h1>
+    <p>JavaScript oferece uma variedade de funções para manipulação de strings. Aqui estão algumas das funções mais comuns:</p>
+    <table>
+        <tr align="center" bgcolor="E0FFFF">
+            <td>
+                NOME
+            </td>
+            <td>
+                FUNCIONALIDADE
+            </td>
+        </tr>
+        <tr>
+            <td>
+                length:
+            </td>
+            <td>
+                Retorna o comprimento da string.
+                var minhaString = "Hello, World!";
+                console.log(minhaString.length); // Saída: 13
+            </td>
+        </tr>
+        <tr>
+            <td>
+                charAt(index):
+            </td>
+            <td>
+                Retorna o caractere na posição especificada.
+                var minhaString = "Hello";
+                console.log(minhaString.charAt(0)); // Saída: "H"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                concat(str1, str2, ..., strN):
+            </td>
+            <td>
+                Concatena duas ou mais strings.
+                var str1 = "Hello";
+                var str2 = " ";
+                var str3 = "World";
+                console.log(str1.concat(str2, str3)); // Saída: "Hello World" 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                indexOf(substring, start):
+            </td>
+            <td>
+                Retorna o índice da primeira ocorrência da substring, começando a busca a partir do índice especificado.
+                var minhaString = "Hello, World!";
+                console.log(minhaString.indexOf("World")); // Saída: 7
+            </td>
+        </tr>
+        <tr>
+            <td>
+                lastIndexOf(substring, start):
+            </td>
+            <td>
+                Retorna o índice da última ocorrência da substring, começando a busca a partir do índice especificado.
+                var minhaString = "Hello, World!";
+                console.log(minhaString.lastIndexOf("o")); // Saída: 8
+            </td>
+        </tr>
+        <tr>
+            <td>
+                slice(start, end):
+            </td>
+            <td>
+                Extrai uma parte da string entre os índices start e end (não incluindo end).
+                var minhaString = "Hello, World!";
+                console.log(minhaString.slice(0, 5)); // Saída: "Hello"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                substring(start, end):
+            </td>
+            <td>
+                Similar a slice, extrai uma parte da string entre start e end.
+                var minhaString = "Hello, World!";
+                console.log(minhaString.substring(7, 12)); // Saída: "World"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                substr(start, length):
+            </td>
+            <td>
+                Extrai uma parte da string a partir de start com o comprimento especificado. var minhaString = "Hello, World!";
+                console.log(minhaString.substr(7, 5)); // Saída: "World"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                replace(oldStr, newStr):
+            </td>
+            <td>
+                Substitui a primeira ocorrência de oldStr por newStr
+                var minhaString = "Hello, World!";
+                console.log(minhaString.replace("Hello", "Hi")); // Saída: "Hi, World!"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                toUpperCase() e toLowerCase():
+            </td>
+            <td>
+                var minhaString = "Hello, World!";
+                console.log(minhaString.toUpperCase()); // Saída: "HELLO, WORLD!"
+                console.log(minhaString.toLowerCase()); // Saída: "hello, world!"
+            </td>
+        </tr>
+    </table>
+
+    <h1>Formatando números</h1>
+    <p>Para formatar as casas decimais dos números podemos utilizar toFixed():
+        O método toFixed() converte um número em uma string, mantendo um número específico de casas decimais.
+        var numero = 123.4567;
+        var numeroFormatado = numero.toFixed(2); // Duas casas decimais
+        console.log(numeroFormatado); // Saída: "123.46"
+    </p>
+
+    <h1>Operadores</h1>
+    <p>Operadores são símbolos que permitem manipular as informações, e temos três tipos: artiméticos, lógicos e relacionais
+        <table>
+            <tr align="center" bgcolor="E0FFFF">
+                <td>
+                    OPERADORES
+                </td>
+                <td>
+                    FUNÇÃO
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    +
+                </td>
+                <td>
+                    adição
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    -
+                </td>
+                <td>
+                    subtração
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    /
+                </td>
+                <td>
+                    divisão
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    *
+                </td>
+                <td>
+                    multiplicação
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &&
+                </td>
+                <td>
+                    AND
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ||
+                </td>
+                <td>
+                    OR
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    !
+                </td>
+                <td>
+                    NOT
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    >
+                </td>
+                <td>
+                    maior
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <
+                </td>
+                <td>
+                    menor
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    >=
+                </td>
+                <td>
+                    maior ou igual
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <=
+                </td>
+                <td>
+                    menor ou igual
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    !=
+                </td>
+                <td>
+                    diferente de
+                </td>
+            </tr>
+        </table>
+    </p>
+
+    <h1>Buscando os elementos HTML no JavaScript</h1>
+    <p>
+        Para acessar os elementos HTML em JavaScript, você pode usar vários métodos, dependendo da forma como os elementos são identificados no HTML. Aqui estão alguns métodos comuns:
+    </p>
+        <table>
+            <tr align="center" bgcolor="E0FFFF">
+                <td>
+                    MÉTODO
+                </td>
+                <td>
+                    COMANDO
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    document.getElementById(id):
+                </td>
+                <td>
+                    Este método retorna uma referência ao elemento que possui o ID especificado. javascript
+                    var meuElemento = document.getElementById("meuId");
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    document.getElementsByClassName(className):
+                </td>
+                <td>
+                    Este método retorna uma coleção de elementos que possuem a classe CSS especificada.
+                    var meusElementos = document.getElementsByClassName("minhaClasse");
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    document.getElementsByTagName(tagName):
+                </td>
+                <td>
+                    Este método retorna uma coleção de elementos com o nome da tag HTML especificada. javascript
+                    var minhasTags = document.getElementsByTagName("p");
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    document.querySelector(selector):
+                </td>
+                <td>
+                    Este método retorna o primeiro elemento que corresponde ao seletor CSS especificado.
+                    var meuElemento = document.querySelector("#meuId");
+                </td>
+            </tr>
+        </table>
+
+    <h2 id="calc">Teste nossa calculadora</h2>
+    
+    <center>
+    <div class="calculadora">
+        <input type="number" id="numero1" placeholder="digite o primeiro número">
+        <input type="number" id="numero2" placeholder="digite o segundo número">
+        <br><br>
+        <button onclick="calcular('soma')">soma</button>
+        <button onclick="calcular('subtracao')">subtração</button>
+        <button onclick="calcular('multiplicacao')">multiplicação</button>
+        <button onclick="calcular('divisao')">divisão</button>
+        <p id="resultado">Resultado: </p>
+    </div>
+    </center>
+    
+    <h1>Acendendo a luz</h1>
+    <p>esse efeito foi gerado por meio da funcionalidade do JavaScript</p>
+    <!--imagem inicial com a luz apagada-->
+    
+    <img id="luz" src="src/imagens/luzApagada.png" alt="Luz apagada" onmouseover="ligarLuz()" onmouseout="apagarLuz()">
+
+
+</body>
+</html>

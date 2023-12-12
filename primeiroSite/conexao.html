@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conexao.css">
+    <link rel="stylesheet" href="geral.css">
+    <title>Formas de conexão</title>
+</head>
+<body>
+    <ul id="menu"><!--lista do menu-->
+        <li class="item"><!--item do menu-->
+            <a href="index.html">Home</a>
+         </li>
+        <li class="item">
+            <a href="links.html">SENAI</a>
+        </li>
+        <li class="item">
+            <a href="inputs.html">Formulários</a>
+        </li>
+        <li class="item">
+            <a href="listasTabelas.html">Tabelas e listas</a>
+        </li>
+        <li class="item">
+            <a href="linhasParagrafos.html">Linhas e Paragrafos</a>
+        </li>
+        <li class="item">
+            <a href="conexao.html">Conexão CSS</a>
+        </li>
+        
+        <li class="item">
+            <a href="java.html">Comandos java</a>
+        </li>
+        <li class="item"><!--item do menu-->
+            <a href="desenvolvedor.html">Desenvolvedor</a>
+        </li>
+    </ul>
+    <h1 class="Titulo">design</h1>
+
+    <p class="pcenter">O design é um elemento muito importante do desenvolvimento web, para que as páginas fiquem atraentes aos nossos clientes, e representem da melhor forma os produtos e a empresa dele aos seus consumidores.</p>
+
+    <h1 class="Titulo">Já imaginou</h1>
+
+    <p class="pcenter">Se as páginas web fossem apenas em preto e branco, sem formatação de cores, fontes, decorações de texto, imagens não dimensionadas, como poderíamos criar páginas de modo a encantar os clientes?</p>
+    
+    <h1 class="Titulo">Formas de conexão HTML e CSS</h1>
+
+    <p>Existem três formas para conectar um design <b>CSS</b> com a programação <b>HTML</b>.</p>
+
+    <ol><li>Interna</li><li>Externa</li><li>Por linha</li></ol>
+
+    <table><tr><td>Conexão externa</td><td>Para o funcionamento desta forma, é necessário um arquivo <b>externo</b> .css, onde terá os dados que darão "vida" ao site. E a conexão ocorrerá atraves da tag &lt limk &gt e no local "href" será colocado o link ou endereço de conexão do css.</td></tr><tr><td>Conexão interna</td><td>O interno é criado por meio da tag style, em nosso cabeçalo head, tem uma estrutura Similar ao do arquivo externo, porém reside no meu documento html.</td></tr><tr><td>Em linha</td><td>A conexão em linha é realizada dentro da tag de abertura que você deseja estilizar, com o atributo style="", entre as aspas passe as propriedades que você deseja utilizar, sempre separando por ponto e vírgula. EX: style="color:red; font-size:18".</td></tr></table>
+
+    <br>
+
+    <h4>Todos os comandos do css devem se finalizar com ponto e vírgula(;).</h4>
+
+    <hr>
+
+    <h2 class="Titulo">Referenciando os elementos para estilização</h2>
+    <p>Os elementos podem ser referenciados de três formas diferentes:</p>
+
+    <ol><li>Identificação</li><li>Classe</li><li>Proprio nome</li></ol>
+
+    <table><tr><td>Identificação</td><td>Todo elemento tem um id único que é uma identificação do elemento. O id é uma identificação definida na tag de abertura como id="". No css para usar o id de um elemento para estilizá-lo basta colocar #idDoElemento{}. Entre as chaves passamos os parâmetros para a estilização.</td></tr><tr><td>classe</td><td>A classe identifica não somente um elemento, mas um grupo de elementos, desde que definamos para todos a mesma classe, pelo nome que é atribuído a ela. Assim como o id, deve ser definido na tag de abertura dos elementos: class="",geralmente definimos por seu nome a sua função . No css para usar a classe de um elemento para estilizá-lo basta colocar .classDoElemento{}. Entre as chaves passamos os parâmetros para a estilização.</td></tr><tr><td>Nome da tag</td><td>Ao utilizar o nome da tag propriamente dito, ex: p, body, h1, estilizamos todas as tags deste tipo que não possuem id, ou class. No css para usar o nome de um elemento para estilizá-lo basta colocar nomeElemento{}. Entre as chaves passamos os parâmetros para a estilização.</td></tr></table>
+
+    <h4>Importante: A ordem de precedência de aplicação de estilização por prioridade é em linha, interno e por último externo.</h4>
+</body>
+</html>

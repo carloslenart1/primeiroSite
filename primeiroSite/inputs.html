@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="geral.css">
+        <title>Entrada de dados</title>
+    </head>
+<body>
+    <ul id="menu"><!--lista do menu-->
+        <li class="item"><!--item do menu-->
+            <a href="index.html">Home</a>
+         </li>
+        <li class="item">
+            <a href="links.html">SENAI</a>
+        </li>
+        <li class="item">
+            <a href="inputs.html">Formulários</a>
+        </li>
+        <li class="item">
+            <a href="listasTabelas.html">Tabelas e listas</a>
+        </li>
+        <li class="item">
+            <a href="linhasParagrafos.html">Linhas e Paragrafos</a>
+        </li>
+        <li class="item">
+            <a href="conexao.html">Conexão CSS</a>
+        </li>
+        
+        <li class="item">
+            <a href="java.html">Comandos java</a>
+        </li>
+        <li class="item"><!--item do menu-->
+            <a href="desenvolvedor.html">Desenvolvedor</a>
+        </li>
+    </ul>
+    <center>
+    <h1>
+        Formulários e Entrada de Dados
+    </h1>
+    <br>
+    <img src="src/imagens/form.png" alt="Imagem de formulário" width="300" height="300">
+    <br>
+    <p>
+        Os formulários em html são representados pela tag input, ela possui diferentes entradas de dados: <u>textos, números, e-mail, senhas, sexo.</u>
+        <br>
+        Toda vez que criamos a tag input ela cria uma caixa de entrada.
+        <br>
+        <input type="text" placeholder="Digite um texto" name="cx_exemplo">
+        <br>
+        <br>
+        A tag input tem os seguintes parametros: type, para indicar que tipos de informações será inserida <b>(text, password, checkbox, radio, number, e-mail)</b>, bem como o campo de <i>placeholder</i>, é como se fosse uma dica para o usúario de qual informação precisa ser inserida ali, após clicar no campos desse texto desaparece.
+    </p>
+    <h3>
+        Caixa de Entrada e tipos de dados
+    </h3>
+    <p>
+        Caixa de entrada para nome:
+        <br>
+        <input type="text" placeholder="Digite seu nome" name="cx_nome">
+        <br>
+        <br>
+    </p>
+    <p>
+        Caixa de entrada para senhas:
+        <br>
+        <input type="text" placeholder="Digite sua senha" name="cx_senha">
+        <br>
+        <br>
+    </p>
+    <p>
+        Caixa de entrada do tipo checkbox:
+        <br>
+        <label>
+            <input type="checkbox" value="Sim" name="cx_check_sim">Sim
+        </label>
+        <label>
+            <input type="checkbox" value="Não" name="cx_check_nao">Não
+        </label>
+
+        <label>
+            <input type="checkbox" value="Talvez" name="cx_check_talvez">Talvez
+        </label>
+        <br>
+        <br>
+    </p>
+    <p>
+        Caixa de entrada do tipo radio:
+        Para que o usúario tenha que escolher apenas uma opção, as entradas do tipo radio devem ter o mesmo name
+        <br>
+        <label>
+                <input type="radio" value="Sim" name="cx_radio"> Sim
+        </label>
+        <label>
+                <input type="radio" value="Não" name="cx_radio"> Não
+        </label>
+        <label>
+                <input type="radio" value="Talvez" name="cx_radio"> Talvez
+        </label>
+    </p>
+    <p>
+        Caixa de entrada para CPF:
+        <br>
+        <input type="number" placeholder="XXX.XXX.XXX-XX" name="cx_cpf">
+        <br>
+        <br>
+    </p>
+    <p>
+        Caixa de entrada para e-mail: Para que você "force" o usúario a digitar a informação de email antes de clicar em enviar coloque o atributo <i>required</i> ao final. Também poderá criar um input, uma entrada de dados para enviar a informação, essa entrada terá como type submit.
+        <br>
+        <input type="email" placeholder="nome@exemplo.com" id="email" name="email" required>
+        <input type="submit" value="Enviar" id="btn_input_enviar">
+        <br>
+        <br>
+    </p>
+    <p>
+        Caixa de entrada para upload de arquivos:
+        <br>
+        <form action="https://drive.google.com/drive/folders/1gvog_TqpF3UQwDyG7x60KYEVgwR1l9UD" method="post" enctype="multipart/form-data">
+            <label class="arquivo" for="arquivo">
+                Escolha um arquivo
+            </label>
+            <input type="file" id="arquivo" name="arquivo" accept=".pdp,.doc,.docs,.mp3,.mp4,.jpeg,.jpg,.png">
+            <input type="submit" value="Enviar">
+        </form>
+        <br>
+    </p>
+    <br>
+    <p>Caixa de entrada para seleção de opções:
+        <select name="Estado" id="Estado">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="AC">Acre</option>
+        </select>
+    </p>
+    <br>
+    <p>Caixa de entrada para avaliação: </p>
+        <br>
+        <div class="estrelas">
+            <input type="radio" id="cm_star-empty" name="fb" value="" checked="">
+            <label for="cm_star-1"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-1" name="fb" value="1">
+            <label for="cm_star-2"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-2" name="fb" value="2">
+            <label for="cm_star-3"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-3" name="fb" value="3">
+            <label for="cm_star-4"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-4" name="fb" value="4">
+            <label for="cm_star-5"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-5" name="fb" value="5">
+          </div>
+        <br>
+        <br>
+        
+    </center>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.Titulo{
+    color:#4F208D;
+    text-align: center;
+}
+
+
+
+.pcenter{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    font-size: 14;
+}
+
+table{
+    border-collapse: collapse;
+    width: 57%;
+    margin: auto;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+td,tr{
+    border: 2px solid #000000;
+}
+
+tr{
+    color:black;
+}

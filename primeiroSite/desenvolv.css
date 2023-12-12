@@ -1,0 +1,89 @@
+body{
+    /*background-image: url(); imagem de fundo no site*/
+    background-color:#E7F5E3;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 7%;
+}
+
+
+
+#menu{
+    padding-left:0%;
+    list-style-type: none;/*Remover marcador da lista*/
+    background-color:#E7F5E3;
+    width: 120px;
+    height: 100%;
+    position:fixed;
+    overflow: auto;/*ativa barra de rolarem se tiver muito conteúdo*/
+}
+
+li a{
+    display: block;
+    width: 120px;
+    height: 60px;
+    background-color: #E7F5E3; 
+    color: rgb(0, 0, 0);
+}
+
+
+
+.item{
+    /*alinhamento do item horizontalmente*/
+    text-align: center;
+    font-size: 14px;/*tamanho da letra*/
+    font-family: serif;/*tipo de letra*/
+}
+
+
+
+li a:hover{/*altera a cor do link ao passar o mouse*/
+    background: #C7E7BF;
+    color:black;
+}
+
+.item a{
+    padding-top: 30px;
+    text-decoration: none;
+}
+
+p,h1,h2,h3,h4, img,video,iframe,h5,ol,ul{
+    padding-left: 10%;
+}
+
+#dese{
+    padding-top: 5%;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+}
+#des{
+    font-size: 50px;
+    font-family: 'BankGothic Md BT';
+}
+#port{
+    padding-right: 15%;
+}
+
+p{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    text-align: justify;
+}
+
+.container{
+    display: flex;
+}
+
+#contatos{
+    padding-left: 10%;
+    padding-right: 1px;
+}
+.cont{
+    padding-right: 1px;
+    padding-left: 1px;
+}
+a{
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas e Tabelas</title>
+    <link rel="stylesheet" href="conexao.css">
+    <link rel="stylesheet" href="geral.css">
+</head>
+<body>
+    <ul id="menu"><!--lista do menu-->
+        <li class="item"><!--item do menu-->
+            <a href="index.html">Home</a>
+         </li>
+        <li class="item">
+            <a href="links.html">SENAI</a>
+        </li>
+        <li class="item">
+            <a href="inputs.html">Formulários</a>
+        </li>
+        <li class="item">
+            <a href="listasTabelas.html">Tabelas e listas</a>
+        </li>
+        <li class="item">
+            <a href="linhasParagrafos.html">Linhas e Paragrafos</a>
+        </li>
+        <li class="item">
+            <a href="conexao.html">Conexão CSS</a>
+        </li>
+        
+        <li class="item">
+            <a href="java.html">Comandos java</a>
+        </li>
+        <li class="item"><!--item do menu-->
+            <a href="desenvolvedor.html">Desenvolvedor</a>
+        </li>
+    </ul>
+    <center>
+    <h1> Listas </h1>
+    <img src="src/imagens/Listas.png" alt="imagem de uma lista" width="300" height="200"> 
+    </center>
+    <p >
+        Assim como os cabeçalhos, que separampartes do texto, outra forma de estruturar um documento html é a utilização de <b>listas</b>.
+    </p>
+    <p>
+        As listas podem funcionar como um sumário, um menu ou um resumo do conteúdo do documento. Existem dois tipos de listas <b>não-ordenadas</b> e <b>ordenadas.</b>
+    </p>
+    <hr>
+    <h2>
+        Listas não ordenadas
+    </h2>
+    <p>
+        As listas não ordenadas contém uma série de itens sem numerá-los. Para criá-la usamos a tag ul, e dentro da tag ul criamos para cada item da lista uma tag li. Utilizamos esta tag para exibir uma lista de alguns cursos que de TI que temos no SENAI Paulínia, como resultado teremos a lista abaixo:
+    </p>
+    <ul>
+        <li>
+            Programação Java Fundamentals Oracle
+        </li>
+        <li>
+            Programação Python
+        </li>
+        <li>
+            Desenvolvimento de Páginas Web
+        </li>
+        <li>
+            Montagem e Manutenção de Computador
+        </li>
+        <li>
+            Microsoft AI-900 - Fundamentos da IA
+        </li>
+        <li>
+            Microsoft DP-900 - Fundamento de análise dados
+        </li>
+        <li>
+            Microsoft Power Bi
+        </li>
+    </ul>
+    <hr>>
+    <h2>Listas ordenadas</h2>
+    <p>
+        As listas ordenadas contém uma série de itens numerados. Para criá-la usamos a tag ol, e dentro da tag ol criamos para cada item da lista uma tag li. Utilizamos esta tag para exibir uma lista de alguns cursos que de TI que temos no SENAI Paulínia, como resultado teremos a lista ordenada abaixo:
+    </p>
+    <ol>
+        <li>
+            Programação Java Fundamentals Oracle
+        </li>
+        <li>
+            Programação Python
+        </li>
+        <li>
+            Desenvolvimento de Páginas Web
+        </li>
+        <li>
+            Montagem e Manutenção de Computador
+        </li>
+        <li>
+            Microsoft AI-900 - Fundamentos da IA
+        </li>
+        <li>
+            Microsoft DP-900 - Fundamento de análise dados
+        </li>
+        <li>
+            Microsoft Power Bi
+        </li>
+    </ol>
+    <hr>
+    <center>
+    <h1>
+        Tabelas
+    </h1>
+    <img src="src/imagens/Tabela.png" alt="imagem de tabela" width="450" height="350">
+    </center>
+    <p align="center">
+        As tabelas são estruturas que organizam as informações em <b>linhas</b> e <b>colunas</b>. Para criar uma tabela, utilizamos a tag <b>table</b> que deverá conter toda a estrutura da tabela. Para a compor nossa tabela temos de criar a estrutura de linha e coluna.
+    </p>
+    <h3>
+        Linha
+    </h3>
+    <br>
+    <p>
+        Para criar a tag de referência de linha dentro de uma tabela devemos inserir a tag tr que é a tag que cria linhas.
+    </p>
+    <hr>
+    <h3>
+        Coluna
+    </h3>
+    <br>
+    <p>
+        Para criar a tag de referência de coluna dentro de uma tabela devemos inserir a tag td que é a tag que cria colunas.
+    </p>
+    <hr>
+    <h3>
+        Exemplo de Tabela com o nome dos alunos do curso e o projeto que desenvolverão:
+    </h3>
+    <br>
+    <table border="1" width="23%" >
+        <tr align="center" bgcolor="E0FFFF">
+            <td>Aluno </td><!--informação 1° linha e 1° coluna-->
+            <td>Projeto Final</td><!--informação 1° linha e 2zzzzzzzzzzzz° coluna-->
+        </tr>
+        <tr >
+            <td>Carlos Serra</td>
+            <td>Site Loja de Pipas</td>
+        </tr>
+        <tr>
+            <td>Henry Peressinotti</td>
+            <td>Site Pesqueiro</td>
+        </tr>
+        <tr>
+            <td>Kelly Brito</td>
+            <td>Site de Pousada</td>
+        </tr>
+        <tr>
+            <td>Vitor Salgado</td>
+            <td>Site da Loja de Acessórios</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
